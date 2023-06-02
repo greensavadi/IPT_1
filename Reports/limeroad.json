@@ -1,0 +1,437 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-26T09:27:34.338Z",
+        "line": 5,
+        "name": "To login into the LimeRoad application",
+        "description": "",
+        "id": "limeroad-order;to-login-into-the-limeroad-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5035168000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Launch the url \"https://www.limeroad.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.limeroad.com/\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.StepDefinition.LimeroadStepDefinition.launch_the_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1092590900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click the element to select shop men it navigate to men page",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.click_the_element_to_select_shop_men_it_navigate_to_men_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat com.Base.BaseClass.explicitWaitVisibility(BaseClass.java:73)\r\n\tat com.StepDefinition.LimeroadStepDefinition.user_hover_curser_on_profile_icon_login_option_will_be_shown_below(LimeroadStepDefinition.java:35)\r\n\tat ✽.user Hover curser on profile icon login option will be shown below(file:///C:/Users/gobiv/eclipse-workspace/LimeRoad1/src/test/java/com/Feature/LimeRoad.feature:8)\r\n",
+              "duration": 83018200,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user Hover curser on profile icon login option will be shown below",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_hover_curser_on_profile_icon_login_option_will_be_shown_below()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1511000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click the login button to navigate to login page",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_the_login_button_to_navigate_to_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1023000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user enter login credintials as their mobile number",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_enter_login_credintials_as_their_mobile_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1002500,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user click next button to receive the opt in thier mobile",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_next_button_to_receive_the_opt_in_thier_mobile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1004200,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user enter the otp in console as a input",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_enter_the_otp_in_console_as_a_input()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2999700,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user click verify button if Otp matches user will succesfully login into the limeroad application",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_verify_button_if_otp_matches_user_will_succesfully_login_into_the_limeroad_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-26T09:27:40.886Z",
+        "line": 16,
+        "name": "To search a product in Tshirt",
+        "description": "",
+        "id": "limeroad-order;to-search-a-product-in-tshirt",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1050440700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user navigate to the url \"https://www.limeroad.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.limeroad.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_navigate_to_the_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 458144600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user click Tshirt icon to get all collection of tshirts",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_tshirt_icon_to_get_all_collection_of_tshirts()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(), \u0027Step Out In Style\u0027)]\"}\n  (Session info: chrome\u003d113.0.5672.127)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-5QTLE0E8\u0027, ip: \u0027192.168.131.8\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\\Users\\gobiv\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 9219b852054445014f8a956dacc43a3d\n*** Element info: {Using\u003dxpath, value\u003d//div[contains(text(), \u0027Step Out In Style\u0027)]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.getWrappedElement(Unknown Source)\r\n\tat org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)\r\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\r\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\r\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)\r\n\tat com.Base.BaseClass.scrollAndClick(BaseClass.java:199)\r\n\tat com.StepDefinition.LimeroadStepDefinition.user_click_required_product_model_as_step_out_in_style_from_the_all_product_model(LimeroadStepDefinition.java:77)\r\n\tat ✽.user click required product model as Step Out In Style from the all product model(file:///C:/Users/gobiv/eclipse-workspace/LimeRoad1/src/test/java/com/Feature/LimeRoad.feature:19)\r\n",
+              "duration": 62693600,
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "user click required product model as Step Out In Style from the all product model",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_required_product_model_as_step_out_in_style_from_the_all_product_model()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1338800,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user click required product item as Maroon Solid T-Shirt from the all items displayed",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_required_product_item_as_maroon_solid_t_shirt_from_the_all_items_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "user click required size as M from the various option provided",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_required_size_as_m_from_the_various_option_provided()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user click add to cart button to save the item to the cart",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_add_to_cart_button_to_save_the_item_to_the_cart()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@tshirt"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-26T09:27:42.504Z",
+        "line": 27,
+        "name": "To search a product in Jeans",
+        "description": "",
+        "id": "limeroad-order;to-search-a-product-in-jeans",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 465898200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user navigate to the url \"https://www.limeroad.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.limeroad.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_navigate_to_the_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 396736800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user click Jeans icon to get all collection of jeans",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_jeans_icon_to_get_all_collection_of_jeans()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//div[contains(text(), \u0027Mid Rise Jeans\u0027)])[1]\"}\n  (Session info: chrome\u003d113.0.5672.127)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-5QTLE0E8\u0027, ip: \u0027192.168.131.8\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\\Users\\gobiv\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 9219b852054445014f8a956dacc43a3d\n*** Element info: {Using\u003dxpath, value\u003d(//div[contains(text(), \u0027Mid Rise Jeans\u0027)])[1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.getWrappedElement(Unknown Source)\r\n\tat org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)\r\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\r\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\r\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)\r\n\tat com.Base.BaseClass.scrollAndClick(BaseClass.java:199)\r\n\tat com.StepDefinition.LimeroadStepDefinition.user_click_required_product_model_as_mid_rise_jeans_from_the_all_product_model(LimeroadStepDefinition.java:103)\r\n\tat ✽.user click required product model as Mid Rise Jeans from the all product model(file:///C:/Users/gobiv/eclipse-workspace/LimeRoad1/src/test/java/com/Feature/LimeRoad.feature:30)\r\n",
+              "duration": 52404000,
+              "status": "failed"
+            },
+            "line": 30,
+            "name": "user click required product model as Mid Rise Jeans from the all product model",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_required_product_model_as_mid_rise_jeans_from_the_all_product_model()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "user click required product item as Mid Rise Washed Denim Jean from the all items displayed",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_required_product_item_as_mid_rise_washed_denim_jean_from_the_all_items_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "user click required size as 36 from the various option provided",
+            "match": {
+              "arguments": [
+                {
+                  "val": "36",
+                  "offset": 28
+                }
+              ],
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_required_size_as_from_the_various_option_provided(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4241800,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "user click add to cart button to save the item to the cart",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_add_to_cart_button_to_save_the_item_to_the_cart()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@jeans"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-26T09:27:43.448Z",
+        "line": 37,
+        "name": "To search a product in Home",
+        "description": "",
+        "id": "limeroad-order;to-search-a-product-in-home",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 383456500,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user navigate to the url \"https://www.limeroad.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.limeroad.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_navigate_to_the_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 483136400,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user click Home icon to get all collection of home",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_home_icon_to_get_all_collection_of_home()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(), \u0027New And Wow\u0027)]\"}\n  (Session info: chrome\u003d113.0.5672.127)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-5QTLE0E8\u0027, ip: \u0027192.168.131.8\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\\Users\\gobiv\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 9219b852054445014f8a956dacc43a3d\n*** Element info: {Using\u003dxpath, value\u003d//div[contains(text(), \u0027New And Wow\u0027)]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.getWrappedElement(Unknown Source)\r\n\tat org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)\r\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\r\n\tat java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\r\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)\r\n\tat com.Base.BaseClass.scrollAndClick(BaseClass.java:199)\r\n\tat com.StepDefinition.LimeroadStepDefinition.user_click_required_product_model_as_new_and_wow_from_the_all_product_model(LimeroadStepDefinition.java:121)\r\n\tat ✽.user click required product model as New and Wow from the all product model(file:///C:/Users/gobiv/eclipse-workspace/LimeRoad1/src/test/java/com/Feature/LimeRoad.feature:40)\r\n",
+              "duration": 27538200,
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "user click required product model as New and Wow from the all product model",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_required_product_model_as_new_and_wow_from_the_all_product_model()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "user click required product item as Microfiber Multipurpose Runner from the all items displayed",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_required_product_item_as_microfiber_multipurpose_runner_from_the_all_items_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "user click add to cart button to save the item to the cart",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_click_add_to_cart_button_to_save_the_item_to_the_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "user close the browser to exit the current scenario",
+            "match": {
+              "location": "com.StepDefinition.LimeroadStepDefinition.user_close_the_browser_to_exit_the_current_scenario()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@home"
+          }
+        ]
+      }
+    ],
+    "name": "LimeRoad order",
+    "description": "",
+    "id": "limeroad-order",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/Feature/LimeRoad.feature",
+    "tags": [
+      {
+        "name": "@RegressionTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

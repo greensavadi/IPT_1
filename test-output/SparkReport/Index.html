@@ -1,0 +1,957 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 26, 2023 02:57:32 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@login</a><a class="dropdown-item" href="#">@tshirt</a><a class="dropdown-item" href="#">@jeans</a><a class="dropdown-item" href="#">@home</a><a class="dropdown-item" href="#">@RegressionTest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">LimeRoad order</p>
+            <p class="text-sm">
+              <span>2:57:34 PM</span> / <span>00:00:09:814</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">LimeRoad order</h5>
+<span class='badge badge-success'>05.26.2023 2:57:34 PM</span>
+<span class='badge badge-danger'>05.26.2023 2:57:44 PM</span>
+<span class='badge badge-default'>00:00:09:814</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>To login into the LimeRoad application</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.StepDefinition.LimeroadStepDefinition.launch_the_url(java.lang.String)">
+                <span>Given Launch the url "https://www.limeroad.com/"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.StepDefinition.LimeroadStepDefinition.click_the_element_to_select_shop_men_it_navigate_to_men_page()">
+                <span>When click the element to select shop men it navigate to men page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.StepDefinition.LimeroadStepDefinition.user_hover_curser_on_profile_icon_login_option_will_be_shown_below()">
+                <span>And user Hover curser on profile icon login option will be shown below</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.Base.BaseClass.explicitWaitVisibility(BaseClass.java:73)
+	at com.StepDefinition.LimeroadStepDefinition.user_hover_curser_on_profile_icon_login_option_will_be_shown_below(LimeroadStepDefinition.java:35)
+	at ✽.user Hover curser on profile icon login option will be shown below(file:///C:/Users/gobiv/eclipse-workspace/LimeRoad1/src/test/java/com/Feature/LimeRoad.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_the_login_button_to_navigate_to_login_page()">
+                <span>And user click the login button to navigate to login page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_enter_login_credintials_as_their_mobile_number()">
+                <span>And user enter login credintials as their mobile number</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_next_button_to_receive_the_opt_in_thier_mobile()">
+                <span>And user click next button to receive the opt in thier mobile</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_enter_the_otp_in_console_as_a_input()">
+                <span>And user enter the otp in console as a input</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_verify_button_if_otp_matches_user_will_succesfully_login_into_the_limeroad_application()">
+                <span>Then user click verify button if Otp matches user will succesfully login into the limeroad application</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>To search a product in Tshirt</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.StepDefinition.LimeroadStepDefinition.user_navigate_to_the_url(java.lang.String)">
+                <span>When user navigate to the url "https://www.limeroad.com/"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_tshirt_icon_to_get_all_collection_of_tshirts()">
+                <span>And user click Tshirt icon to get all collection of tshirts</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_required_product_model_as_step_out_in_style_from_the_all_product_model()">
+                <span>And user click required product model as Step Out In Style from the all product model</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(), 'Step Out In Style')]"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-5QTLE0E8', ip: '192.168.131.8', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\gobiv\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9219b852054445014f8a956dacc43a3d
+*** Element info: {Using=xpath, value=//div[contains(text(), 'Step Out In Style')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at com.Base.BaseClass.scrollAndClick(BaseClass.java:199)
+	at com.StepDefinition.LimeroadStepDefinition.user_click_required_product_model_as_step_out_in_style_from_the_all_product_model(LimeroadStepDefinition.java:77)
+	at ✽.user click required product model as Step Out In Style from the all product model(file:///C:/Users/gobiv/eclipse-workspace/LimeRoad1/src/test/java/com/Feature/LimeRoad.feature:19)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_required_product_item_as_maroon_solid_t_shirt_from_the_all_items_displayed()">
+                <span>And user click required product item as Maroon Solid T-Shirt from the all items displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_required_size_as_m_from_the_various_option_provided()">
+                <span>And user click required size as M from the various option provided</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_add_to_cart_button_to_save_the_item_to_the_cart()">
+                <span>And user click add to cart button to save the item to the cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log fail-bg mr-2">Fail</span>To search a product in Jeans</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.StepDefinition.LimeroadStepDefinition.user_navigate_to_the_url(java.lang.String)">
+                <span>When user navigate to the url "https://www.limeroad.com/"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_jeans_icon_to_get_all_collection_of_jeans()">
+                <span>And user click Jeans icon to get all collection of jeans</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_required_product_model_as_mid_rise_jeans_from_the_all_product_model()">
+                <span>And user click required product model as Mid Rise Jeans from the all product model</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(text(), 'Mid Rise Jeans')])[1]"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-5QTLE0E8', ip: '192.168.131.8', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\gobiv\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9219b852054445014f8a956dacc43a3d
+*** Element info: {Using=xpath, value=(//div[contains(text(), 'Mid Rise Jeans')])[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at com.Base.BaseClass.scrollAndClick(BaseClass.java:199)
+	at com.StepDefinition.LimeroadStepDefinition.user_click_required_product_model_as_mid_rise_jeans_from_the_all_product_model(LimeroadStepDefinition.java:103)
+	at ✽.user click required product model as Mid Rise Jeans from the all product model(file:///C:/Users/gobiv/eclipse-workspace/LimeRoad1/src/test/java/com/Feature/LimeRoad.feature:30)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_required_product_item_as_mid_rise_washed_denim_jean_from_the_all_items_displayed()">
+                <span>And user click required product item as Mid Rise Washed Denim Jean from the all items displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_required_size_as_from_the_various_option_provided(java.lang.Integer)">
+                <span>And user click required size as 36 from the various option provided</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_add_to_cart_button_to_save_the_item_to_the_cart()">
+                <span>And user click add to cart button to save the item to the cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="25"><span class="badge log fail-bg mr-2">Fail</span>To search a product in Home</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.StepDefinition.LimeroadStepDefinition.user_navigate_to_the_url(java.lang.String)">
+                <span>When user navigate to the url "https://www.limeroad.com/"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_home_icon_to_get_all_collection_of_home()">
+                <span>And user click Home icon to get all collection of home</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_required_product_model_as_new_and_wow_from_the_all_product_model()">
+                <span>And user click required product model as New and Wow from the all product model</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(), 'New And Wow')]"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-5QTLE0E8', ip: '192.168.131.8', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\gobiv\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9219b852054445014f8a956dacc43a3d
+*** Element info: {Using=xpath, value=//div[contains(text(), 'New And Wow')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at com.Base.BaseClass.scrollAndClick(BaseClass.java:199)
+	at com.StepDefinition.LimeroadStepDefinition.user_click_required_product_model_as_new_and_wow_from_the_all_product_model(LimeroadStepDefinition.java:121)
+	at ✽.user click required product model as New and Wow from the all product model(file:///C:/Users/gobiv/eclipse-workspace/LimeRoad1/src/test/java/com/Feature/LimeRoad.feature:40)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_required_product_item_as_microfiber_multipurpose_runner_from_the_all_items_displayed()">
+                <span>And user click required product item as Microfiber Multipurpose Runner from the all items displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_click_add_to_cart_button_to_save_the_item_to_the_cart()">
+                <span>And user click add to cart button to save the item to the cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinition.LimeroadStepDefinition.user_close_the_browser_to_exit_the_current_scenario()">
+                <span>Then user close the browser to exit the current scenario</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>And user click required product model as Step Out In Style from the all product model</a>
+<div class="">
+<span class="badge badge-default">LimeRoad order.To search a product in Tshirt.And user click required product model as Step Out In Style from the all product model</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>And user click required product model as Mid Rise Jeans from the all product model</a>
+<div class="">
+<span class="badge badge-default">LimeRoad order.To search a product in Jeans.And user click required product model as Mid Rise Jeans from the all product model</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>And user click required product model as New and Wow from the all product model</a>
+<div class="">
+<span class="badge badge-default">LimeRoad order.To search a product in Home.And user click required product model as New and Wow from the all product model</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>And user Hover curser on profile icon login option will be shown below</a>
+<div class="">
+<span class="badge badge-default">LimeRoad order.To login into the LimeRoad application.And user Hover curser on profile icon login option will be shown below</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@login</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@login</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>To login into the LimeRoad application</a>
+<div class="">
+<span class="badge badge-default">LimeRoad order.To login into the LimeRoad application</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@tshirt</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tshirt</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>To search a product in Tshirt</a>
+<div class="">
+<span class="badge badge-default">LimeRoad order.To search a product in Tshirt</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@jeans</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@jeans</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>To search a product in Jeans</a>
+<div class="">
+<span class="badge badge-default">LimeRoad order.To search a product in Jeans</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@home</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@home</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>To search a product in Home</a>
+<div class="">
+<span class="badge badge-default">LimeRoad order.To search a product in Home</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">@RegressionTest</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@RegressionTest</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>To login into the LimeRoad application</a>
+<div class="">
+<span class="badge badge-default">LimeRoad order.To login into the LimeRoad application</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>To search a product in Tshirt</a>
+<div class="">
+<span class="badge badge-default">LimeRoad order.To search a product in Tshirt</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>To search a product in Jeans</a>
+<div class="">
+<span class="badge badge-default">LimeRoad order.To search a product in Jeans</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>To search a product in Home</a>
+<div class="">
+<span class="badge badge-default">LimeRoad order.To search a product in Home</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 26, 2023 02:57:32 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 26, 2023 02:57:44 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>4</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='30%'><b>8</b> steps passed</small></div>
+<div>
+<small data-tooltip='15%'><b>4</b> steps failed,
+<b>14</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"LimeRoad order":9.814
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@login</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@tshirt</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@jeans</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@home</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@RegressionTest</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 4,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 8,
+failGrandChild: 4,
+warningGrandChild: 0,
+skipGrandChild: 14,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
